@@ -13,7 +13,6 @@ body {
   background-repeat: no-repeat;
   background-color: hsl(257, 40%, 49%);
   padding: 1rem 5rem;
-  overflow: hidden;
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
 }
@@ -24,6 +23,7 @@ main.container {
   & > img {
     width: 10rem;
     margin-bottom: 4rem;
+    margin-top: 3rem;
   }
 
   & .grid {
@@ -70,14 +70,16 @@ main.container {
 
   & .socials {
     margin-top: 2rem;
-    margin-left: 67rem;
+    display: flex;
+    justify-content: flex-end;
 
     & > i {
       color: white;
       display: inline;
       border: 1px solid white;
-      padding: 0.5rem;
+      padding: 1rem 0.5rem;
       border-radius: 50%;
+      margin-right: 0.7rem;
     }
   }
 }
@@ -98,7 +100,6 @@ footer p.attribution {
     background-size: contain;
     background-color: hsl(257, 40%, 49%);
     padding: 2rem 2rem;
-    overflow: scroll;
   }
 
   main.container {
@@ -124,8 +125,8 @@ footer p.attribution {
     }
 
     & .socials {
-      border: 1px solid black;
       margin-top: 4rem;
+      justify-content: center;
     }
   }
 }

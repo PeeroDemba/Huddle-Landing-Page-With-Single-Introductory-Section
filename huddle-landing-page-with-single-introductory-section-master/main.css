@@ -13,7 +13,6 @@ body {
   background-repeat: no-repeat;
   background-color: hsl(257deg, 40%, 49%);
   padding: 1rem 5rem;
-  overflow: hidden;
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
 }
@@ -24,6 +23,7 @@ main.container {
 main.container > img {
   width: 10rem;
   margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 main.container .grid {
   display: grid;
@@ -62,14 +62,16 @@ main.container .grid .text a:hover {
 }
 main.container .socials {
   margin-top: 2rem;
-  margin-left: 67rem;
+  display: flex;
+  justify-content: flex-end;
 }
 main.container .socials > i {
   color: white;
   display: inline;
   border: 1px solid white;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   border-radius: 50%;
+  margin-right: 0.7rem;
 }
 
 footer p.attribution {
@@ -87,7 +89,6 @@ footer p.attribution a {
     background-size: contain;
     background-color: hsl(257deg, 40%, 49%);
     padding: 2rem 2rem;
-    overflow: scroll;
   }
   main.container img {
     width: 10rem;
@@ -107,7 +108,7 @@ footer p.attribution a {
     margin-top: 0;
   }
   main.container .socials {
-    border: 1px solid black;
     margin-top: 4rem;
+    justify-content: center;
   }
 }
