@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 90rem;
+  min-height: 100vh;
+  background-image: url(./images/bg-desktop.svg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  padding: 1rem 5rem;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+main.container {
+  max-width: 90rem;
+
+  & > img {
+    width: 10rem;
+    margin-bottom: 4rem;
+  }
+
+  & .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+
+    & img {
+      width: 100%;
+    }
+
+    & .text {
+      color: white;
+      padding: 0 2.8rem;
+      margin-top: 2rem;
+
+      & h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      & p {
+        line-height: 1.5rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.1rem;
+      }
+
+      & a {
+        padding: 0.8rem 3.5rem;
+        border-radius: 1.5rem;
+        background-color: white;
+        color: hsl(257, 40%, 49%);
+        text-decoration: none;
+        font-size: 1.2rem;
+
+        &:hover {
+          background-color: hsl(300, 69%, 71%);
+          color: white;
+        }
+      }
+    }
+  }
+
+  & .socials {
+    margin-top: 2rem;
+    margin-left: 67rem;
+
+    & > i {
+      color: white;
+      display: inline;
+      border: 1px solid white;
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+footer p.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+
+  a {
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    background-position: center -2rem;
+    background-size: contain;
+    background-color: hsl(257, 40%, 49%);
+    padding: 2rem 2rem;
+    overflow: scroll;
+  }
+
+  main.container {
+    & img {
+      width: 10rem;
+      margin-bottom: 3rem;
+    }
+
+    & .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      text-align: center;
+
+      & img {
+        width: 100%;
+      }
+
+      & .text {
+        padding: 0 0;
+        margin-top: 0;
+      }
+    }
+
+    & .socials {
+      border: 1px solid black;
+      margin-top: 4rem;
+    }
+  }
+}
